@@ -1,0 +1,19 @@
+ALGORITHM algorithm_name
+VAR
+    array_tab1 : ARRAY_OF INTEGER[] := [12, 13, 6, 10];
+    array_tab2 : ARRAY_OF INTEGER[] := [13, 10, 16, 15];
+    c : INTEGER := 0
+    i : INTEGER;
+    j : INTEGER;
+BEGIN
+    FOR i FROM 1 TO array_tab1.length STEP 1  DO
+        
+        FOR j FROM 1 TO array_tab2.length STEP 1  DO
+            IF (array_tab1[i] = array_tab2[j]) THEN
+                c := c + array_tab1[i] + array_tab2[j]
+            END_IF
+    
+        END_FOR
+    END_FOR
+    Write(c)
+END
