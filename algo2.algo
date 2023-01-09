@@ -1,0 +1,27 @@
+ALGORITHM algorithm_name
+VAR
+    array_tab1 : ARRAY_OF INTEGER[] := [12, 13, 6, 10];
+    array_tab2 : ARRAY_OF INTEGER[] := [13, 10, 16, 15];
+    c : INTEGER := 0
+    i : INTEGER;
+    j : INTEGER;
+BEGIN
+    FOR i FROM 1 TO array_tab1.length STEP 1  DO
+        H.insert(A[i],1)
+    END_FOR
+    FOR i FROM 1 TO  array_tab2.length STEP 1  DO
+       IF (H.lookup( array_tab2[i]=true)) THEN
+            H.insert( array_tab2[i],2)
+        END_IF
+    END_FOR
+       FOR i FROM 1 TO array_tab1.length STEP 1  DO
+        IF (H.get(array_tab1[i] =1)) THEN
+            sum := sum +  array_tab1 [i]
+        END_IF
+    END_FOR
+    FOR i FROM 1 TO  array_tab2.length STEP 1  DO
+        IF (H.get( array_tab2[i] =1)) THEN
+            sum := sum +  array_tab2 [i]
+        END_IF
+    END_FOR
+END

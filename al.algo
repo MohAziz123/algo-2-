@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+ALGORITHM commonNBrHash
 VAR
     A : ARRAY_OF INTEGER[] := [12, 13, 6, 10];
     B : ARRAY_OF INTEGER[] := [13, 10, 16, 15];
@@ -15,9 +15,11 @@ BEGIN
             H.insert(B[i],1)
         END_IF
     END_FOR
+    
     FOR i FROM 1 TO A.length STEP 1  DO
         IF (H.get(A[i] = 2)) THEN
             sum := sum + A[i]*2
         END_IF
     END_FOR
+   write("la somme est:", sum)
 END

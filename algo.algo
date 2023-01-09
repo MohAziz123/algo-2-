@@ -1,4 +1,4 @@
-ALGORITHM algorithm_name
+ALGORITHM commonNBR
 VAR
     array_tab1 : ARRAY_OF INTEGER[] := [12, 13, 6, 10];
     array_tab2 : ARRAY_OF INTEGER[] := [13, 10, 16, 15];
